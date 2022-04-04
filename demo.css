@@ -1,0 +1,338 @@
+/* header */
+.header-container{
+    position: relative;
+}
+.sub-header-container{
+    position: absolute;
+    bottom: 5%;
+    right: 18%;
+}
+.sub-header-container a+a{
+    margin-left: 20px;
+}
+.header-container::before{
+    position: absolute;
+    content: "";
+    right: 0%;
+    bottom: 6.5%;
+    width: 15%;
+    height: 2px;
+    background-color: #000000;
+}
+.products-extend-nav{
+    color: white;
+}
+.anchor-shop-link{
+    color: #000000 !important;
+    font-size: 18px;
+    font-family: "intro-demo-black-caps";
+}
+.products-logo{
+    position: absolute;
+    top: 440%;
+    left: -3%;
+}
+.logo-image-2{
+    position: absolute;
+    top: -150%;
+    left: 17%;
+}
+.image-back{
+    position: relative;
+    width: 20%;
+}
+div .additional-anchor-link+.additional-anchor-link{
+    margin-left: 20px;
+}
+.main-ul .sub-li+.sub-li{
+    margin-left: 10px ;
+}
+.select-container{
+    background-color: transparent;
+    border: transparent;
+    color: white;
+}
+.anchor-shop{
+    background-color: #097115;
+    font-size: 18px;
+    color: white !important;
+    border-radius: 5px;
+}
+
+
+/*  */
+
+
+.shopnow-links{
+    color: #000000;
+}
+.amru-background-image{
+    position: absolute;
+    top: 420%;
+    right: 15%;
+    opacity: 0.5;
+}
+.filter-container,.price-container{
+    padding: 0px;
+    list-style-type: none;
+    border-bottom: #707070 1px solid;
+}
+.filter-header{
+    font-size: 25px;
+    font-family: 'intro-bold-regular';
+}
+.price-header{
+    font-size: 25px;
+    font-family: 'intro-bold-regular';
+    position: relative;
+}
+.filter-header::after,.pain-management-head::after{
+    position: absolute;
+    content: '';
+    left:5%;
+    top: 4%;
+    right: 0%;
+    background-color: #000000;
+    height: 2px;
+    width: 90%;
+}
+.category-span{
+    font-size: 19px;
+    font-family: 'intro-bold-regular';
+}
+.filter-labels{
+    font-size: 19px;
+    color: #6F6F6F;
+    font-family: "avenir-roman";
+}
+ul .filter-list-container+.filter-list-container{
+    margin-top: 10px;
+}
+
+/* products section*/
+.pain-management-head{
+    font-size: 35px;
+    font-family: 'intro-bold-regular';
+}
+.products-main-container{
+    background-color: #F4FAF0;
+    border-radius: 7px;
+    box-shadow: -2px 5px 10px;
+    width: 280px;
+}
+.products-main-container:hover .spl-btn{
+    /* transform: scale(1.1); */
+    display: block;
+}
+.spl-btn{
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.products-header{
+    font-size: #0000;
+    max-width: 200px;
+    font-size: 20px;
+    font-family: 'intro-bold-regular';
+}
+.quantity-link{
+    font-size: 13px;
+    border: #707070 1px solid;
+    padding: 2px 10px;
+    border-radius: 7px;
+    color: #000000;
+    font-family: "avenir-roman";
+}
+div .quantity-link+.quantity-link{
+    margin-left: 6px;
+}
+.price-path{
+    font-size: 20px;
+    color: #2B2B2B;
+    font-family: 'intro-bold-regular';
+}
+.ratings-path{
+    font-size: 16px;
+}
+.product-images{
+    height: 200px;
+}
+.additional-product-images{
+    width: 400px;
+}
+.dropdown-style{
+    width: 112px;
+    font-family: 'intro-bold-regular';
+}
+.additonal-style-filter{
+    margin-top: 50px;
+}
+
+@media  screen and (max-width:1024px) {
+    .products-extend-nav{
+        padding: 15px;
+    }
+    .products-logo{
+        top: 430%;
+        left: -4%;
+        width: 170px;
+    }
+    .anchor-shop-link{
+        font-size: 11px;
+    }
+    .filter-labels{
+        font-size: 14px;
+    }
+    .products-header{
+        font-size: 15px;
+    }
+    .pain-management-head::after,.filter-header::after{
+        top: 3%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .products-extend-nav{
+        padding: 14px !important;
+    }
+    .products-logo{
+        top: 310%;
+        left: 1%;
+        width: 150px;
+    }
+    .anchor-shop-link{
+        font-size: 9px;
+    }
+    .pain-management-head::after{
+        top: 3%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .products-main-container{
+        width: 250px;
+    }
+    .pain-management-head{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .products-extend-nav{
+        padding: 10px !important;
+    }
+    .products-logo{
+        top: 322%;
+        left: -25%;
+        width: 130px;
+    }
+    .anchor-shop-link{
+        font-size: 15px;
+        text-align: center;
+    }
+    .products-main-container{
+        width: 100%;
+    }
+    .products-header{
+        font-size: 20px;
+        max-width: 100%;
+    }
+    .sign-in-container{
+        border-right: none !important;
+    }
+    .pain-management-head{
+        font-size: 23px;
+    }
+    .pain-management-head::after{
+        display: none;
+    }
+}
+
+/* .modal-backdrop{
+    z-index: 0;
+} */
+
+/* icons */
+.black-search-icon::after{
+    content: '\e903';
+    font-family: 'icomoon';
+    color: black;
+    padding-left: 20px;
+}
+.black-cart-icon::after{
+    content: '\e908';
+    color: #000000;
+    font-family: 'icomoon';
+    padding-left: 20px;
+}
+.menu-icon::after{
+    content: '\e901';
+    font-family: 'icomoon';
+    color: #000000;
+    font-size: 20px;
+}
+.light-menu-icon::after{
+    content: '\e900';
+    font-family: 'icomoon';
+    color: #e3e3e3;
+    font-size: 20px;
+}
+div .icons+.icons{
+    margin-left: 20px;
+}
+.colored-star::after{
+    content: '\e902';
+    color: #589831;
+    font-family: "icomoon";
+}
+.uncolored-star::after{
+    content: '\e902';
+    color: #c7d4bf;
+    font-family: 'icomoon';
+}
+.products-like-icon::after{
+    content: '\e909';
+    color: black;
+    font-family: 'icomoon';
+}
+.sortby-btn{
+    background-color: #F3F7F0;
+    border: #589831 1px solid;
+    width: 100px;
+}
+
+/*  */
+.sign-in-container{
+    border-right: black 1px solid;
+}
+.user-images{
+    height: 100px;
+}
+.sign-in-button{
+    font-size: 15px;
+    padding: 5px 20px 5px 10px;
+    color: black;
+    border-radius: 20px;
+    font-family: "intro-demo-black-caps";
+}
+.login-btn{
+    font-family: "intro-demo-black-caps";
+    font-size: 15px;
+}
+.sign-in-para{
+    font-size: 15px;
+}
+.modal-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-heads{
+    font-family: 'intro-bold-regular';
+    font-size: 24px;
+}

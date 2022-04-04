@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Products</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./icomoon-css/style.css">
+</head>
+
+<body>
+   
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light products-extend-nav shadow p-4">
+            <div class="container-fluid">
+                    <div class="navbar-brand image-back" href="#">
+                        <img src="./background-images/Path 19948.png" class="products-logo" alt="logo-image">
+                        <img src="./images/amrulogoimage.png" class="logo-image-2" alt="logo-image">
+                    </div>
+                    <a href="#" class="navbar-text anchor-shop-link additional-anchor-link d-none d-sm-block">About</a>
+                    <a href="shopnow.html" class="navbar-text anchor-shop-link additional-anchor-link d-none d-sm-block">Our Products</a>
+
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto main-ul">
+                        <li class="nav-item sub-li add-sub-li d-sm-none d-xs-block">
+                            <a class="nav-link anchor-shop-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item active sub-li d-sm-none d-xs-block">
+                            <a class="nav-link anchor-shop-link" href="shopnow.html">Our Products</a>
+                        </li>
+                        <li class="nav-item sub-li">
+                            <a type="button" class="btn nav-link anchor-shop-link" data-toggle="modal" data-target="#exampleModal">
+                                Signin
+                            </a>
+                        </li>
+                        <li class="nav-item sub-li">
+                            <a href="#" class="nav-link anchor-shop-link">
+                                <select class="anchor-shop-link select-container">
+                                  <option value="">Eng</option>
+                                  <option value="">sjs</option>
+                              </select>  
+                            </a>
+                        </li>
+                        <li class="nav-item sub-li">
+                            <a class="nav-link anchor-shop-link black-search-icon" href="#">Search</a>
+                        </li>
+                        <li class="nav-item sub-li">
+                            <div class="dropdown">
+                                <a class="nav-link anchor-shop-link black-cart-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                  aria-expanded="false">
+                                  Cart
+                                </a>
+                                  <ul class="dropdown-menu dropdown-menu-right carts-container" aria-labelledby="dropdownMenuLink">
+                                    <!-- <img src="./cartimages/Polygon 7.png" class="polygon-image" alt="poly-image"> -->
+                                    <li class="dropdown-item">
+                                      <div class="d-flex">
+                                        <img src="./cartimages/product.png" class="cart-image" alt="">
+                                        <div class="d-flex flex-column justify-content-center">
+                                          <h6 class="cart-head d-inline">Aromatic Action Pain Balm Extra Power</h6>
+                                          <p>Price: <span>RS.75</span></p>
+                                          <p>Quantity: <span>2 x 8ml</span></p>
+                                        </div>
+                                        <a href="#" class="text-dark align-self-end"><i class="fa-solid fa-trash-can"></i></a>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-divider"></li>
+                                    <li class="dropdown-item">
+                                      <div class="d-flex">
+                                        <img src="./cartimages/Image 18.png" class="cart-image" alt="">
+                                        <div class="ml-2 d-flex flex-column justify-content-center">
+                                          <h6 class="cart-head">Strong Pain Balm Double Power</h6>
+                                          <p>Price: <span>RS.200</span></p>
+                                          <p>Quantity: <span>2 x 27.5ml</span></p>
+                                        </div>
+                                        <a href="#" class="text-dark align-self-end"><i class="fa-solid fa-trash-can"></i></a>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-divider"></li>
+                                    <li class="dropdown-item">
+                                      <div class="d-flex">
+                                        <img src="./cartimages/product.png" class="cart-image" alt="">
+                                        <div class="d-flex flex-column justify-content-center">
+                                          <h6 class="cart-head">Aromatic Action Pain Balm Extra Power</h6>
+                                          <p>Price: <span>RS.75</span></p>
+                                          <p>Quantity: <span>2 x 8ml</span></p>
+                                        </div>
+                                        <a href="#" class="text-dark align-self-end"><i class="fa-solid fa-trash-can"></i></a>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-divider"></li>
+                                    <div class="d-flex justify-content-between m-1">
+                                      <button class="btn btn-warning w-100 m-1">View Cart</button>
+                                      <button class="btn btn-success w-100 m-1">check out</button>
+                                    </div>
+                                  </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item sub-li">
+                            <a class="nav-link anchor-shop-link like-icon" href="#">Wishlist</a>
+                        </li>
+                        <li class="nav-item sub-li">
+                            <a class="nav-link anchor-shop text-center" href="#">SHOP NOW</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="modalcontentId">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you Individual, Business or Guest User?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" >&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalbodyId">
+                    <div class="row" id="rowId">
+                        <div class="col-lg-4 col-md-4 col-sm-12 sign-in-container d-flex flex-column justify-content-center align-items-center">
+                            <img src="./signinimages/Group 3596.png" class="user-images w-50 m-1" alt="user-login-image">
+                            <button class="btn btn-light btn-outline-success">Individual</button>
+                            <p class="text-center">Lorem ipsum dolor sit met</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 sign-in-container d-flex flex-column justify-content-center align-items-center">
+                            <img src="./signinimages/suitcase.png" class="user-images w-75 m-1" alt="user-login-image">
+                            <button class="btn btn-light btn-outline-success">Business</button>
+                            <p class="text-center">Lorem ipsum dolor sit met</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                            <img src="./signinimages/man-with-short-hair-profile-avatar.png" class="user-images w-50 m-1" alt="user-login-image">
+                            <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#exampleModal123">
+                               Guest
+                              </button>
+                            <p class="text-center">Lorem ipsum dolor sit met</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title modal-heads text-success" id="exampleModalLabel">Customer Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="false" data-bs-target="#exampleModal">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body m-auto w-100 p-5">
+              <form class="d-flex flex-column justify-content-center align-items-center  w-100">
+                  <input class="m-2 p-2 w-75" type="email" placeholder="Enter Email Id *">
+                  <input class="m-2 p-2 w-75" type="password" placeholder="password *">
+                  <div class="d-flex justify-content-between flex-wrap w-75">
+                      <div class="d-flex">
+                        <input type="checkbox" class="align-self-center">
+                        <label class="ml-2 align-self-center">Remember me</label>
+                      </div>
+                      <a href="#" class="text-primary">Forgot Password?</a>
+                  </div>
+                  <a href="#" class="align-self-center btn btn-light btn-outline-success login-btn">Login</a>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn">Don't have account</button>
+              <a href="#" class="btn text-dark btn-outline-info ">Signup?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <main class="container-fluid mt-5">
+            <div class="row additonal-style-filter p-4">
+                <div class="col-lg-3 col-md-2 d-none d-lg-block">
+                    <h3 class="filter-header pb-3">Filter</h3>
+                    <p class="category-span mt-4">Product Category</p>
+                    <ul class="filter-container mt-3">
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Pain Management</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Congestion Management</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Women’s Hygiene</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Beverages</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Personal Care</label>
+                        </li>
+                    </ul>
+                    <h3 class="price-header">Price</h3>
+                    <ul class="price-container">
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Rs.30 - Rs.100 (40)</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Rs.101 - Rs.200 (40)</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Rs.201 - Rs.300 (20)</label>
+                        </li>
+                        <li class="filter-list-container">
+                            <input type="checkbox">
+                            <label class="filter-labels ml-2">Rs.300 and Above (10)</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-around d-lg-none d-md-block mb-3">
+                    <div class="dropdown">
+                        <button class="dropdown-style btn border-bottom btn-outline-info bg-secondary text-white " type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                            Filter
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Pain Management</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Congestion Management</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Women's Hygiene</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Beverages</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Personal Care</label>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-style bg-secondary text-white border-bottom btn btn-outline-info" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                            Price
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Rs.30 - Rs.100 (40)</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Rs.101 - Rs.200 (40)</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Rs.201 - Rs.300 (20)</label>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label filter-labels">Rs.300 and Above (10)</label>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-10">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap w-100 pb-3">
+                        <h1 class="pain-management-head ">PAIN MANAGEMENT</h1>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="icons menu-icon"></a>
+                            <a href="#" class="icons light-menu-icon"></a>
+                            <div class="dropdown icons">
+                                <button class="btn border-bottom btn-outline-success sortby-btn " type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Sort By
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Name By</a></li>
+                                    <li><a class="dropdown-item" href="#">Date By</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start flex-wrap">
+                        <div id="product1" class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-50 product-images" src="./products-images/product.png"
+                                    alt="extra-power">
+                                <h4 class="products-header">Aromatic Action Pain Balm Extra Power</h4>
+                                <div class="d-flex justify-content-start">
+                                    <button href="#" class="quantity-link btn btn-outline-success">8 ml</button>
+                                    <button href="#" class="quantity-link btn btn-outline-success active">27.5 ml</button>
+                                    <button href="#" class="quantity-link btn btn-outline-success">50ml</button>
+                                </div>
+                                <p class="price-path">Rs.100</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product2"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-50 product-images" src="./products-images/Image 18.png"
+                                    alt="pain-balm">
+                                <h4 class="products-header">Strong Pain Balm Double Power</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">8 ml</a>
+                                    <a href="#" class="quantity-link btn btn-outline-success">27.5 ml</a>
+                                    <a href="#" class="quantity-link btn-outline-success">50ml</a>
+                                </div>
+                                <p class="price-path">Rs.38</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product3"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-50 product-images" src="./products-images/Image 728.png"
+                                    alt="balm-image">
+                                <h4 class="products-header">Maha Strong Pain Balm Hot Action</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">8 ml</a>
+                                </div>
+                                <p class="price-path">Rs.42</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product4"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-50 product-images"
+                                    src="./products-images/Mask Group 146.png" alt="rollon-image">
+                                <h4 class="products-header">Headache Faster Relaxation Roll-on</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">8 ml</a>
+                                    <a href="#" class="quantity-link btn btn-outline-success">10 ml</a>
+                                </div>
+                                <p class="price-path">Rs.35</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product5"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-50 product-images" src="./products-images/Image 395.png" alt="rollon-image">
+                                <h4 class="products-header">Advanced Back Pain + Roll-on</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">50 ml</a>
+                                </div>
+                                <p class="price-path">Rs.100</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product6"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-50 product-images" src="./products-images/Image 590.png"
+                                    alt="lotion-image">
+                                <h4 class="products-header">Advanced Back Pain +Lotion</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">30 ml</a>
+                                </div>
+                                <p class="price-path">Rs.70</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product7"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-100 product-images additional-product-images"
+                                    src="./products-images/102215 Amrutajan Packshot JMS_80g Front.png" alt="spray-image">
+                                <h4 class="products-header">Advanced Joint Muscle + Spray</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">30 ml</a>
+                                    <a href="#" class="quantity-link btn btn-outline-success">80 ml</a>
+                                </div>
+                                <p class="price-path">Rs.100</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                        <div id="product8"  class=" products-main-container m-3">
+                            <div class="d-flex flex-column p-3 justify-content-start">
+                                <a href="#" class="products-like-icon align-self-end"></a>
+                                <img class="align-self-center w-100 product-images additional-product-images"
+                                    src="./products-images/102215 Amrutajan Packshot Pain Patch_Front.png" alt="pain-image">
+                                <h4 class="products-header">Advanced Pain Relief + Patch</h4>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#" class="quantity-link btn btn-outline-success active">2 Patches</a>
+                                </div>
+                                <p class="price-path">Rs.350</p>
+                                <div>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="colored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <a href="#" class="uncolored-star"></a>
+                                    <span class="ratings-path">4.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="shop-now-anchor-btn bg-success spl-btn text-white text-center m-1">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="container-fluid p-0">
+        <section class="main-footer-section p-5">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="footer-heads">Quick Links</h4>
+                    <div class="d-flex flex-column mt-5">
+                        <a href="#" class="footer-links">Bulk Buys</a>
+                        <a href="#" class="footer-links">Inverstors Relations</a>
+                        <a href="#" class="footer-links">Careers</a>
+                        <a href="#" class="footer-links">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="footer-heads">Customer care</h4>
+                    <div class="d-flex flex-column mt-5">
+                        <a href="#" class="footer-links">Order History</a>
+                        <a href="#" class="footer-links">Shipping</a>
+                        <a href="#" class="footer-links">Returns</a>
+                        <a href="#" class="footer-links">Terms of Use</a>
+                        <a href="#" class="footer-links">Privacy Policy</a>
+                        <a href="#" class="footer-links">Cancellation Policy</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="footer-heads additional-footer-header">Quick Links</h4>
+                    <div class="mt-5 d-flex justify-content-start footer-sub-links">
+                        <a href="#" class="location-icon"></a>
+                        <address class="address-bar ml-2">103, (Old No. 42-45),Luz Church Road. Mylapore,Chennai- 600
+                            004.
+                        </address>
+                    </div>
+                    <div class="footer-sub-links">
+                        <a href="#" class="call-icon"></a>
+                        <a href="#" class="footer-links">+91 44 2499 4465 (5 Lines)</a>
+                    </div>
+                    <div class="footer-sub-links">
+                        <a href="#" class="mobile-icon"></a>
+                        <a href="#" class="footer-links ml-2">Toll Free | 1-800-425-4545</a>
+                    </div>
+                    <div class="footer-sub-links">
+                        <a href="#" class="fax-icon"></a>
+                        <a href="#" class="footer-links ml-2">Fax | +91 44 2499 4585</a>
+                    </div>
+                    <div class="footer-sub-links">
+                        <a href="#" class="mail-icon"></a>
+                        <a href="#" class="footer-links ml-2">customercare@amrutanjan.com</a>
+                    </div>
+                    <div class="footer-sub-links">
+                        <a href="#" class="user-icon"></a>
+                        <a href="#" class="footer-links ml-2">investors@amrutanjan.com</a>
+                    </div>
+                    <div class="d-flex flex-column footer-sub-links">
+                        <a href="#" class="footer-links">Web Safety Links</a>
+                        <a href="#" class="footer-links">Sitemap / Links</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="footer-heads additional--footer-header">Sign Up to Newsletter</h4>
+                    <p class="footer-subscribe mt-5">Subscribe to our newsletter and get info on best deals</p>
+                    <form class="d-flex flex-column justify-content-center mt-5">
+                        <input type="mail" class="search-bar p-2" placeholder="Enter Email ID" required>
+                        <input type="submit" class="align-self-end mt-5 subscribe-button btn" value="Subscribe">
+                    </form>
+                    <div class="d-flex justify-content-end mt-5 icons-container">
+                        <a href="#" class="facebook-icon mt-5"></a>
+                        <a href="#" class="youtube-icon mt-5"></a>
+                        <a href="#" class="twitter-icon mt-5"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p class="text-center p-4"> &copy; Copyright 2020 - Amrutanjan Health Care Ltd. All rights reserved. Please
+                read our
+                privacy policy.</p>
+        </div>
+    </footer>
+
+    <script src="demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
